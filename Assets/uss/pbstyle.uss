@@ -1,1 +1,26 @@
-VisualElement {}
+VisualElement {
+}
+
+.usualDataElement {
+}
+
+.highlighted {
+    border-left-color: rgb(48, 246, 0);
+    border-right-color: rgb(48, 246, 0);
+    border-top-color: rgb(48, 246, 0);
+    border-bottom-color: rgb(48, 246, 0);
+    border-left-width: 5px;
+    border-right-width: 5px;
+    border-top-width: 5px;
+    border-bottom-width: 5px;
+}
+
+.selected {
+    background-color: rgb(48, 246, 0);
+}
+
+.text {
+    font-size: 17px;
+    -unity-font-style: bold;
+    color: rgb(48, 246, 0);
+}
