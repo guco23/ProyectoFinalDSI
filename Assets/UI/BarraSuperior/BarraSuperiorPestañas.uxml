@@ -1,0 +1,9 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="BarraSuperiorSeparador" src="project://database/Assets/UI/BarraSuperior/BarraSuperiorSeparador.uxml?fileID=9197481963319205126&amp;guid=9371b1323a6e14d4095eca5ad7533790&amp;type=3#BarraSuperiorSeparador" />
+    <ui:Template name="BarraSuperiorPerstana" src="project://database/Assets/UI/BarraSuperior/BarraSuperiorPerstana.uxml?fileID=9197481963319205126&amp;guid=7a1059f73fb383c45993e86e9644c306&amp;type=3#BarraSuperiorPerstana" />
+    <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
+    <ui:VisualElement name="BarraSuperior" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="flex-grow: 1;" />
+        <ui:Instance template="BarraSuperiorPerstana" name="BarraSuperiorPerstana" />
+    </ui:VisualElement>
+</ui:UXML>

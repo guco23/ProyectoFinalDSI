@@ -1,0 +1,7 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="ElementoSeleccionables" src="project://database/Assets/UI/ListadoSeleccionables/ElementoSeleccionables.uxml?fileID=9197481963319205126&amp;guid=8ec1a00358b78d4418f38cb29c90fb2f&amp;type=3#ElementoSeleccionables" />
+    <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
+    <ui:VisualElement name="Listado">
+        <ui:Instance template="ElementoSeleccionables" name="ElementoSeleccionables" />
+    </ui:VisualElement>
+</ui:UXML>

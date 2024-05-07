@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements">
+    <ui:VisualElement name="Elemento" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-wrap: nowrap;">
+        <ui:VisualElement name="cuadradoSelector" style="width: 30px; height: auto; align-items: center; justify-content: center;">
+            <ui:VisualElement name="VisualElement" class="selected" style="width: 10px; height: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ContenedorTexto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Pistola .233" display-tooltip-when-elided="true" name="Texto" class="text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
