@@ -1,4 +1,9 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <ui:Template name="BarraSuperior" src="project://database/Assets/UI/BarraSuperior/BarraSuperior.uxml?fileID=9197481963319205126&amp;guid=81741fd6dd812624f8394ac0a9749383&amp;type=3#BarraSuperior" />
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
-    <ui:VisualElement name="Pantalla" style="flex-grow: 1; background-color: rgb(0, 25, 4);" />
+    <ui:VisualElement name="Pantalla" style="flex-grow: 1; background-color: rgb(0, 25, 4);">
+        <ui:VisualElement name="topBar" style="height: 10%; justify-content: center;">
+            <ui:Instance template="BarraSuperior" name="BarraSuperior" style="align-items: center;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
 </ui:UXML>

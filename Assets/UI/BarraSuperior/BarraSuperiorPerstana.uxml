@@ -1,8 +1,8 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
-    <ui:VisualElement name="pestana" style="height: 100%; width: 100%; border-left-color: rgb(48, 246, 0); border-right-color: rgb(48, 246, 0); border-top-color: rgb(48, 246, 0); border-bottom-color: rgb(48, 246, 0); border-left-width: 30px; border-right-width: 30px; border-top-width: 30px; border-bottom-width: 30px; flex-direction: row; padding-left: 20%; padding-right: 20%;">
+    <ui:VisualElement name="pestana" style="height: 100%; width: 100%; border-left-color: rgb(48, 246, 0); border-right-color: rgb(48, 246, 0); border-top-color: rgb(48, 246, 0); border-bottom-color: rgb(48, 246, 0); border-left-width: 20px; border-right-width: 20px; border-top-width: 20px; border-bottom-width: 20px; flex-direction: row; padding-left: 20%; padding-right: 20%;">
         <ui:VisualElement name="cuadroTexto" style="flex-grow: 1; justify-content: center;">
-            <ui:Label tabindex="-1" text="DATA" display-tooltip-when-elided="true" name="texto" class="text" style="-unity-text-align: upper-center; font-size: 80%;" />
+            <ui:Label tabindex="-1" text="DATA" display-tooltip-when-elided="true" name="texto" class="text" style="-unity-text-align: upper-center; font-size: 40%;" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
