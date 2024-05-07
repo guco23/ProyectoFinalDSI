@@ -3,16 +3,20 @@
     <ui:Template name="BarraSuperiorPerstana" src="project://database/Assets/UI/BarraSuperior/BarraSuperiorPerstana.uxml?fileID=9197481963319205126&amp;guid=7a1059f73fb383c45993e86e9644c306&amp;type=3#BarraSuperiorPerstana" />
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
     <ui:VisualElement name="BarraSuperior" style="flex-grow: 1; flex-direction: row;">
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
-        <ui:Instance template="BarraSuperiorPerstana" name="pestanaStat" />
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
-        <ui:Instance template="BarraSuperiorPerstana" name="pestanaInv" />
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
-        <ui:Instance template="BarraSuperiorPerstana" name="pestanaData" />
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
-        <ui:Instance template="BarraSuperiorPerstana" name="pestanaMap" />
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
-        <ui:Instance template="BarraSuperiorPerstana" name="pestanaRadio" />
-        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorPerstana" name="pestanaStat" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorPerstana" name="pestanaInv" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorPerstana" name="pestanaData" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorPerstana" name="pestanaMap" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorPerstana" name="pestanaRadio" style="justify-content: center;" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
+        <ui:Instance template="BarraSuperiorSeparador" name="BarraSuperiorSeparador" class="alignVerticalToMidSelector" />
     </ui:VisualElement>
 </ui:UXML>

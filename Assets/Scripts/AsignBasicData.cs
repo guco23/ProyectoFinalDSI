@@ -1,18 +1,22 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 public class AsignBasicData : MonoBehaviour
 {
-    // Start is called before the first frame update
+    UIDocument doc;
+    VisualElement root;
+    VisualElement topBar;
+
     void Start()
     {
-        
+        doc = GetComponent<UIDocument>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void OnEnable()
     {
-        
+        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        topBar = root.Q("topBar");
     }
 }

@@ -9,10 +9,10 @@ VisualElement {
     border-right-color: rgb(48, 246, 0);
     border-top-color: rgb(48, 246, 0);
     border-bottom-color: rgb(48, 246, 0);
-    border-left-width: 5px;
-    border-right-width: 5px;
-    border-top-width: 5px;
-    border-bottom-width: 5px;
+    border-left-width: 10px;
+    border-right-width: 10px;
+    border-top-width: 10px;
+    border-bottom-width: 10px;
 }
 
 .selected {
@@ -22,4 +22,8 @@ VisualElement {
 .text {
     -unity-font-style: bold;
     color: rgb(48, 246, 0);
+}
+
+.alignVerticalToMidSelector {
+    justify-content: center;
 }

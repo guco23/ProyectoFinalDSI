@@ -1,5 +1,5 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <ui:VisualElement name="separador" style="background-color: rgba(0, 0, 0, 0);">
-        <ui:VisualElement name="separadorVerde" style="background-color: rgb(48, 246, 0); width: 40px; height: 20px; max-width: 50px; min-width: 20px;" />
+        <ui:VisualElement name="separadorVerde" style="background-color: rgb(48, 246, 0); width: 40px; height: 11px; max-width: 50px; min-width: 20px;" />
     </ui:VisualElement>
 </ui:UXML>
