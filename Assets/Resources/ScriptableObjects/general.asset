@@ -12,12 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7eb43fe79b0e8f04b94cb41102185862, type: 3}
   m_Name: general
   m_EditorClassIdentifier: 
-  hp: 0
-  level: 0
-  ap: 0
-  pesoMin: 0
-  pesoMax: 0
-  chapas: 0
-  ubicacion: 
-  fecha: 
-  hora: 
+  hp: 10/890
+  level: 29
+  ap: 60/60
+  peso: 10/890
+  chapas: 1026
+  ubicacion: Commonwealth
+  fecha: 2285
+  hora: 20:16

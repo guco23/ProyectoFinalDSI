@@ -3,5 +3,8 @@
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
     <ui:VisualElement name="Listado">
         <ui:Instance template="ElementoSeleccionables" name="ElementoSeleccionables" />
+        <ui:Instance template="ElementoSeleccionables" name="ElementoSeleccionables" />
+        <ui:Instance template="ElementoSeleccionables" name="ElementoSeleccionables" />
+        <ui:Instance template="ElementoSeleccionables" name="ElementoSeleccionables" />
     </ui:VisualElement>
 </ui:UXML>
