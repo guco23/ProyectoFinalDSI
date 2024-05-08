@@ -1,11 +1,11 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
-    <ui:VisualElement name="contenedorInfo" style="background-color: rgb(16, 83, 0); height: 100%; flex-direction: row;">
+    <ui:VisualElement name="contenedorInfo" style="background-color: rgb(16, 83, 0); height: 100%; flex-direction: row; margin-left: 1px; margin-right: 1px;">
         <ui:VisualElement name="cont1" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-items: stretch; justify-content: center;">
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="tipo" class="text" />
+            <ui:Label tabindex="-1" text="CHAPAS" display-tooltip-when-elided="true" name="tipo" class="text" />
         </ui:VisualElement>
         <ui:VisualElement name="cont2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: space-around; align-items: auto;">
-            <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="cantidad" class="text" />
+            <ui:Label tabindex="-1" text="800" display-tooltip-when-elided="true" name="cantidad" class="text" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
