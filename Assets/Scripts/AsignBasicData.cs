@@ -29,7 +29,7 @@ public class AsignBasicData : MonoBehaviour
     {
         //Establece los MainScreenElements
         mainScreenBarElement[0] = topBar.Q("pestanaStat");
-        mainScreenBarElement[0].Q<Label>("texto").text = "DATA";
+        mainScreenBarElement[0].Q<Label>("texto").text = "STAT";
         mainScreenBarElement[1] = topBar.Q("pestanaInv");
         mainScreenBarElement[1].Q<Label>("texto").text = "INV";
         mainScreenBarElement[2] = topBar.Q("pestanaData");

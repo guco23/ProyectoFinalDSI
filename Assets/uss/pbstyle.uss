@@ -27,3 +27,18 @@ VisualElement {
 .alignVerticalToMidSelector {
     justify-content: center;
 }
+
+.text75 {
+    -unity-font-style: bold;
+    color: rgba(48, 246, 0, 0.77);
+}
+
+.text50 {
+    -unity-font-style: bold;
+    color: rgba(48, 246, 0, 0.67);
+}
+
+.text25 {
+    -unity-font-style: bold;
+    color: rgba(48, 246, 0, 0.43);
+}
