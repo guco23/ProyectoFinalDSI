@@ -20,8 +20,9 @@ public class AsignBasicData : MonoBehaviour
 
     private void OnEnable()
     {
-        root = GetComponent<UIDocument>().rootVisualElement;
-        topBar = root.Q("topBar");
+        doc = GetComponent<UIDocument>();
+        root = doc.rootVisualElement;
+        topBar = root.Q<VisualElement>("topBar");
 
         SetUpBasicElems();
     }
@@ -31,7 +32,7 @@ public class AsignBasicData : MonoBehaviour
     {
         //Establece los MainScreenElements
         //No entiendo los enum lol
-        mainScreenBarElement[0] = topBar.Q("pestanaStat");
+        mainScreenBarElement[0] = topBar.Q<VisualElement>("pestanaStat");
         mainScreenBarElement[1] = topBar.Q("pestanaInv");
         mainScreenBarElement[2] = topBar.Q("pestanaData");
         mainScreenBarElement[3] = topBar.Q("pestanaMap");
