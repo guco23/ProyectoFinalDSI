@@ -1,3 +1,4 @@
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -11,32 +12,32 @@ public class AsignBasicData : MonoBehaviour
     int currentMainScreen;
     VisualElement[] mainScreenBarElement;
 
-    void Start()
-    {
-        mainScreenBarElement = new VisualElement[5];
-        doc = GetComponent<UIDocument>();
-        currentMainScreen = 0;
-    }
-
     private void OnEnable()
     {
+        mainScreenBarElement = new VisualElement[5];
+        currentMainScreen = 0;
+
         doc = GetComponent<UIDocument>();
         root = doc.rootVisualElement;
-        topBar = root.Q<VisualElement>("topBar");
+        topBar = root.Q("topBar");
 
         SetUpBasicElems();
     }
 
-    //Crea la barra superior y otros elementos basicos que estarán en pantalla
+    //Crea la barra superior y otros elementos basicos que estarï¿½n en pantalla
     void SetUpBasicElems()
     {
         //Establece los MainScreenElements
-        //No entiendo los enum lol
-        mainScreenBarElement[0] = topBar.Q<VisualElement>("pestanaStat");
+        mainScreenBarElement[0] = topBar.Q("pestanaStat");
+        mainScreenBarElement[0].Q<Label>("texto").text = "DATA";
         mainScreenBarElement[1] = topBar.Q("pestanaInv");
+        mainScreenBarElement[1].Q<Label>("texto").text = "INV";
         mainScreenBarElement[2] = topBar.Q("pestanaData");
+        mainScreenBarElement[2].Q<Label>("texto").text = "DATA";
         mainScreenBarElement[3] = topBar.Q("pestanaMap");
+        mainScreenBarElement[3].Q<Label>("texto").text = "MAP";
         mainScreenBarElement[4] = topBar.Q("pestanaRadio");
-        mainScreenBarElement[currentMainScreen].AddToClassList("highlighted");
+        mainScreenBarElement[4].Q<Label>("texto").text = "RADIO";
+        mainScreenBarElement[currentMainScreen].Q("pestana").AddToClassList("highlighted");
     }
 }
