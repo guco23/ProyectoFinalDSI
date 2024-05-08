@@ -8,28 +8,19 @@ public class AsignBasicData : MonoBehaviour
     VisualElement topBar;
     
     //La pantalla principal mostrada ahora mismo
-    MainScreen currentMainScreen;
+    int currentMainScreen;
     VisualElement[] mainScreenBarElement;
-
-    enum MainScreen
-    {
-        STAT = 0,
-        INV = 1,
-        DATA = 2,
-        MAP = 3,
-        RADIO = 4
-    }
 
     void Start()
     {
         mainScreenBarElement = new VisualElement[5];
         doc = GetComponent<UIDocument>();
-        currentMainScreen = MainScreen.STAT;
+        currentMainScreen = 0;
     }
 
     private void OnEnable()
     {
-        VisualElement root = GetComponent<UIDocument>().rootVisualElement;
+        root = GetComponent<UIDocument>().rootVisualElement;
         topBar = root.Q("topBar");
 
         SetUpBasicElems();
@@ -40,6 +31,11 @@ public class AsignBasicData : MonoBehaviour
     {
         //Establece los MainScreenElements
         //No entiendo los enum lol
-        mainScreenBarElement[] = topBar.Q("q");
+        mainScreenBarElement[0] = topBar.Q("pestanaStat");
+        mainScreenBarElement[1] = topBar.Q("pestanaInv");
+        mainScreenBarElement[2] = topBar.Q("pestanaData");
+        mainScreenBarElement[3] = topBar.Q("pestanaMap");
+        mainScreenBarElement[4] = topBar.Q("pestanaRadio");
+        mainScreenBarElement[currentMainScreen].AddToClassList("highlighted");
     }
 }
