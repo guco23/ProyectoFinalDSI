@@ -18,10 +18,10 @@ public class Inv : MonoBehaviour
     VisualElement lowerBar;
     //Elementos especificos de el funcionamiento de esta pantalla
     VisualElement listadoItems;
-    UIDocument item; //El item del listado base para copiar
+    UIDocument itemTemplate; //El item del listado base para copiar
     VisualElement[] items;
 
-    private void OnEnable()
+    private void Start()
     {
         generalData = Resources.Load<GeneralData>("ScriptableObjects/general");
         armaData = Resources.LoadAll<ArmaData>("ScriptableObjects/armas/");
@@ -30,7 +30,7 @@ public class Inv : MonoBehaviour
         topBar = root.Q("topBar");
         lowerBar = root.Q("lowerBar");
         listadoItems = root.Q("ListadoSeleccionables").Q("Listado");
-        item = Resources.Load<UIDocument>("UI/ListaSeleccionable");
+        itemTemplate = Resources.Load<UIDocument>("UI/ListaSeleccionable");
         SetUpBasicElems();
         SetUpItemList();
     }
@@ -58,7 +58,7 @@ public class Inv : MonoBehaviour
         for(int i = 0; i < armaData.Length; i++)
         {
             //Crea una copia del elemento base list element y lo guarda en el array
-            //items[i] = item;
+            items[i] = itemTemplate.visualTreeAsset.CloneTree();
             //Lo añade al array
             listadoItems.Add(items[i]);
         }
