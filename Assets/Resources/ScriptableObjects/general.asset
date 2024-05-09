@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: general
   m_EditorClassIdentifier: 
   hp: 10/890
-  level: 29
+  level: NIVEL 29
   ap: 60/60
   peso: 10/890
   chapas: 1026

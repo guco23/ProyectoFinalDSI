@@ -5,7 +5,6 @@ using UnityEngine.UIElements;
 
 public class Stats : MonoBehaviour
 {
-    [SerializeField]
     GeneralData generalData;
     UIDocument doc;
     VisualElement root;
@@ -14,6 +13,7 @@ public class Stats : MonoBehaviour
 
     private void OnEnable()
     {
+        generalData = Resources.Load<GeneralData>("ScriptableObjects/general");
         doc = GetComponent<UIDocument>();
         root = doc.rootVisualElement;
         topBar = root.Q("topBar");
