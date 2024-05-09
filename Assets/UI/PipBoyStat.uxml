@@ -11,17 +11,14 @@
         <ui:VisualElement name="Screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 400px;">
             <ui:VisualElement name="Container" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none; margin-left: 550px; margin-right: 550px; height: 399px;">
                 <ui:VisualElement name="Image" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: resource(&apos;UI Images/StatMenuBoyImage&apos;); margin-left: 0; margin-right: 0; height: 70%; width: auto; margin-top: 0; margin-bottom: 0;" />
-                <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: auto;" />
-                <ui:VisualElement name="EquippedButtons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none; margin-left: 0; margin-right: 0; white-space: normal; flex-direction: row; margin-top: 0; margin-bottom: 0;">
-                    <ui:VisualElement name="Buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none; margin-left: 0; margin-right: 0; white-space: normal; flex-direction: row; margin-top: 0; margin-bottom: 0; height: 100%;">
-                        <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 14%; height: 100%;" />
-                        <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 8%; height: 100%;" />
-                        <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="EspacioInvisible" style="width: 4%;" />
-                        <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 14%; height: 100%;" />
-                        <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 8%; height: 100%;" />
-                        <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 14%; height: 100%;" />
-                        <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 8%; height: 100%;" />
-                    </ui:VisualElement>
+                <ui:VisualElement name="Buttons" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); background-image: none; margin-left: 0; margin-right: 0; white-space: normal; flex-direction: row; margin-top: 10px; margin-bottom: 0; height: 30px; width: auto; justify-content: center;">
+                    <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 20%; height: 100%;" />
+                    <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 12%; height: 100%;" />
+                    <ui:Label tabindex="-1" text="Label" display-tooltip-when-elided="true" name="EspacioInvisible" style="width: 4%;" />
+                    <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 20%; height: 100%;" />
+                    <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 12%; height: 100%;" />
+                    <ui:Button display-tooltip-when-elided="true" name="Cuadrado" style="background-color: rgb(0, 105, 2); width: 20%; height: 100%;" />
+                    <ui:Button display-tooltip-when-elided="true" name="Rectangulo" style="background-color: rgb(0, 105, 2); width: 12%; height: 100%;" />
                 </ui:VisualElement>
             </ui:VisualElement>
         </ui:VisualElement>
