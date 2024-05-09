@@ -4,19 +4,19 @@ using UnityEngine;
 public class GeneralData : ScriptableObject
 {
     [SerializeField]
-    string hp;
+    public string hp;
     [SerializeField]
-    int level;
+    public string level;
     [SerializeField]
-    string ap;
+    public string ap;
     [SerializeField]
-    string peso;
+    public string peso;
     [SerializeField]
-    int chapas;
+    public int chapas;
     [SerializeField]
-    string ubicacion;
+    public string ubicacion;
     [SerializeField]
-    string fecha;
+    public string fecha;
     [SerializeField]
-    string hora;
+    public string hora;
 }

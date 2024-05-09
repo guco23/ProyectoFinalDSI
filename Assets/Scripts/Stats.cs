@@ -5,6 +5,8 @@ using UnityEngine.UIElements;
 
 public class Stats : MonoBehaviour
 {
+    [SerializeField]
+    GeneralData generalData;
     UIDocument doc;
     VisualElement root;
     VisualElement topBar;
@@ -29,8 +31,10 @@ public class Stats : MonoBehaviour
         topBar.Q("pestana4").Q<Label>("texto").text = "";
         //Establece las datas de la barra de abajo
         lowerBar.Q<VisualElement>("Elemento1").Q<Label>("tipo").text = "HP";
+        lowerBar.Q<VisualElement>("Elemento1").Q<Label>("data").text = generalData.hp;
         lowerBar.Q<VisualElement>("Elemento3").Q<Label>("tipo").text = "AP";
-        lowerBar.Q<VisualElement>("Elemento2").Q<Label>("tipo").text = "LEVEL 29";
+        lowerBar.Q<VisualElement>("Elemento3").Q<Label>("data").text = generalData.ap;
+        lowerBar.Q<VisualElement>("Elemento2").Q<Label>("tipo").text = generalData.level;
 
 
     }

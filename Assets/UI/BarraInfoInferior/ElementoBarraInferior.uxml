@@ -5,7 +5,7 @@
             <ui:Label tabindex="-1" text="CHAPAS" display-tooltip-when-elided="true" name="tipo" class="text" />
         </ui:VisualElement>
         <ui:VisualElement name="cont2" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); justify-content: space-around; align-items: auto; margin-right: 13px;">
-            <ui:Label tabindex="-1" text="800" display-tooltip-when-elided="true" name="cantidad" class="text" />
+            <ui:Label tabindex="-1" text="800" display-tooltip-when-elided="true" name="data" class="text" />
         </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>
