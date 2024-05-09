@@ -3,7 +3,7 @@
     <ui:Template name="ElementoBarraInferiorBarrita" src="project://database/Assets/UI/BarraInfoInferior/ElementoBarraInferiorBarrita.uxml?fileID=9197481963319205126&amp;guid=38003317fdfe7474a8dc9b0efd34057c&amp;type=3#ElementoBarraInferiorBarrita" />
     <ui:VisualElement name="BarraInferior3" style="background-color: rgba(0, 0, 0, 0); flex-direction: row; height: 100%;">
         <ui:Instance template="ElementoBarraInferior" name="Elemento1" style="width: 33.333%;" />
-        <ui:Instance template="ElementoBarraInferiorBarrita" name="ElementoBarraInferiorBarrita" style="width: 33%;" />
+        <ui:Instance template="ElementoBarraInferiorBarrita" name="Elemento2" style="width: 33%;" />
         <ui:Instance template="ElementoBarraInferior" name="Elemento3" style="width: 33.333%;" />
     </ui:VisualElement>
 </ui:UXML>

@@ -22,7 +22,7 @@ VisualElement {
 .text {
     -unity-font-style: bold;
     color: rgb(48, 246, 0);
-    font-size: 29px;
+    font-size: 33px;
 }
 
 .alignVerticalToMidSelector {
