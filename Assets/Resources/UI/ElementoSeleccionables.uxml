@@ -1,0 +1,11 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
+    <ui:VisualElement name="Elemento" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-wrap: nowrap;">
+        <ui:VisualElement name="contenedorSelector" style="width: 30px; height: auto; align-items: center; justify-content: center;">
+            <ui:VisualElement name="cuadradoSelector" style="width: 10px; height: 10px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="ContenedorTexto" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+            <ui:Label tabindex="-1" text="Pistola .233" display-tooltip-when-elided="true" name="Texto" class="text" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
