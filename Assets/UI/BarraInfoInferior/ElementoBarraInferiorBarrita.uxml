@@ -1,0 +1,17 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
+    <ui:VisualElement name="contenedorInfo" style="background-color: rgb(16, 83, 0); flex-direction: row; margin-left: 1px; margin-right: 1px;">
+        <ui:VisualElement name="cont1" style="background-color: rgba(0, 0, 0, 0); align-items: stretch; justify-content: center;">
+            <ui:Label tabindex="-1" text="CHAPAS" display-tooltip-when-elided="true" name="tipo" class="text" style="width: 71px;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="cont2" style="background-color: rgba(0, 0, 0, 0);">
+            <ui:VisualElement name="elemento" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: flex-end; height: 100%; width: 100%;">
+                <ui:VisualElement name="barrita" style="flex-grow: 1; flex-direction: row; border-left-color: rgb(48, 246, 0); border-right-color: rgb(48, 246, 0); border-top-color: rgb(48, 246, 0); border-bottom-color: rgb(48, 246, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; height: 51%; margin-left: 6%; margin-right: 6%;">
+                    <ui:VisualElement name="vacia" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                        <ui:VisualElement name="relleno" style="flex-grow: 1; background-color: rgb(48, 246, 0); width: 34%;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

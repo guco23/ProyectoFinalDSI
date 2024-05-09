@@ -1,0 +1,10 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
+    <ui:VisualElement name="elemento" style="flex-grow: 1; flex-direction: row; align-items: center; justify-content: flex-end; height: auto;">
+        <ui:VisualElement name="barrita" style="flex-grow: 1; flex-direction: row; border-left-color: rgb(48, 246, 0); border-right-color: rgb(48, 246, 0); border-top-color: rgb(48, 246, 0); border-bottom-color: rgb(48, 246, 0); border-left-width: 1px; border-right-width: 1px; border-top-width: 1px; border-bottom-width: 1px; height: 75%; margin-left: 6%; margin-right: 6%;">
+            <ui:VisualElement name="vacia" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
+                <ui:VisualElement name="relleno" style="flex-grow: 1; background-color: rgb(48, 246, 0); width: 40%;" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
