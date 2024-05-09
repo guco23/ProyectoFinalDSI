@@ -29,15 +29,15 @@ public class AsignBasicData : MonoBehaviour
     {
         //Establece los MainScreenElements
         mainScreenBarElement[0] = topBar.Q("pestanaStat");
-        mainScreenBarElement[0].Q<Label>("texto").text = "STAT";
+        mainScreenBarElement[0].Q<Button>("Button").text = "STAT";
         mainScreenBarElement[1] = topBar.Q("pestanaInv");
-        mainScreenBarElement[1].Q<Label>("texto").text = "INV";
+        mainScreenBarElement[1].Q<Button>("Button").text = "INV";
         mainScreenBarElement[2] = topBar.Q("pestanaData");
-        mainScreenBarElement[2].Q<Label>("texto").text = "DATA";
+        mainScreenBarElement[2].Q<Button>("Button").text = "DATA";
         mainScreenBarElement[3] = topBar.Q("pestanaMap");
-        mainScreenBarElement[3].Q<Label>("texto").text = "MAP";
+        mainScreenBarElement[3].Q<Button>("Button").text = "MAP";
         mainScreenBarElement[4] = topBar.Q("pestanaRadio");
-        mainScreenBarElement[4].Q<Label>("texto").text = "RADIO";
+        mainScreenBarElement[4].Q<Button>("Button").text = "RADIO";
         mainScreenBarElement[currentMainScreen].Q("pestana").AddToClassList("highlighted");
     }
 }
