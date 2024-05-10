@@ -1,6 +1,6 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
     <ui:VisualElement name="pestana" style="justify-content: center; padding-left: 26px; padding-right: 26px;">
-        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="text" style="background-color: rgba(188, 188, 188, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
+        <ui:Button text="Button" display-tooltip-when-elided="true" name="Button" class="text color" style="background-color: rgba(188, 188, 188, 0); border-left-width: 0; border-right-width: 0; border-top-width: 0; border-bottom-width: 0;" />
     </ui:VisualElement>
 </ui:UXML>

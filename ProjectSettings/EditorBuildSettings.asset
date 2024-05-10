@@ -8,4 +8,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Stat.unity
     guid: 2cda990e2423bbf4892e6590ba056729
+  - enabled: 1
+    path: Assets/Scenes/Inv.unity
+    guid: 45ae158270b9a65428b0b6e00ff0355f
+  - enabled: 1
+    path: Assets/Scenes/Data.unity
+    guid: ff91c6e4bf82eee4186eaca3f2f3691d
+  - enabled: 1
+    path: Assets/Scenes/Map.unity
+    guid: 8c4d8d62ae75f7a4fbf3ede4e1bc179e
+  - enabled: 1
+    path: Assets/Scenes/Radio.unity
+    guid: cf88b59b0e3fe5c4e95ff11f19479a2b
   m_configObjects: {}

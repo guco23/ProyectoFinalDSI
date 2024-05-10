@@ -32,12 +32,27 @@ public class Inv : MonoBehaviour
         listadoItems = root.Q("ListadoSeleccionables").Q("Listado");
         itemTemplate = Resources.Load<UIDocument>("UI/ListaSeleccionable");
         SetUpBasicElems();
-        SetUpItemList();
+        //SetUpItemList();
+    }
+
+    void AddHoverEffect(VisualElement buttonElement)
+    {
+        buttonElement.RegisterCallback<MouseEnterEvent>((evt) => {
+            buttonElement.AddToClassList("highlighted");
+        });
+        buttonElement.RegisterCallback<MouseLeaveEvent>((evt) => {
+            buttonElement.RemoveFromClassList("highlighted");
+        });
     }
 
     //Crea la barra superior y otros elementos basicos que estar�n en pantalla
     void SetUpBasicElems()
     {
+        //Establece los Highlights, esto se borraría de aquí si usasemos SetUpItemList ya al programar el juego de verdad
+        foreach (var item in listadoItems.Children())
+        {
+            AddHoverEffect(item);
+        }
         //Establece la barra slider de arriba
         topBar.Q("pestana1").Q<Label>("texto").text = "ARMAS";
         topBar.Q("pestana2").Q<Label>("texto").text = "ARMADURA";
@@ -51,7 +66,7 @@ public class Inv : MonoBehaviour
         //En el elemento 3 poner el nombre del arma equipada
     }
 
-    void SetUpItemList()
+    void SetUpItemList() // Posible aproximación si el juego estuviera programado
     {
 
         items = new VisualElement[armaData.Length];
@@ -59,8 +74,12 @@ public class Inv : MonoBehaviour
         {
             //Crea una copia del elemento base list element y lo guarda en el array
             items[i] = itemTemplate.visualTreeAsset.CloneTree();
+
             //Lo añade al array
             listadoItems.Add(items[i]);
+
+            // Agrega el efecto de resaltado al pasar el puntero sobre el elemento
+            AddHoverEffect(items[i]);
         }
     }
 }

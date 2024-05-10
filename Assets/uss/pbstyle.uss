@@ -43,3 +43,10 @@ VisualElement {
     -unity-font-style: bold;
     color: rgba(48, 246, 0, 0.43);
 }
+
+.color {
+}
+
+.color:hover {
+    color: rgb(0, 99, 4);
+}

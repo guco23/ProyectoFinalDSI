@@ -1,17 +1,15 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Device;
 using UnityEngine.UIElements;
 
-public class Stats : MonoBehaviour
+public class Map : MonoBehaviour
 {
     GeneralData generalData;
     UIDocument doc;
     VisualElement root;
     VisualElement topBar;
     VisualElement lowerBar;
-    VisualElement screen;
 
     private void OnEnable()
     {
@@ -20,7 +18,6 @@ public class Stats : MonoBehaviour
         root = doc.rootVisualElement;
         topBar = root.Q("topBar");
         lowerBar = root.Q("lowerBar");
-        screen = root.Q("Screen");
         SetUpBasicElems();
     }
 
@@ -38,5 +35,7 @@ public class Stats : MonoBehaviour
         lowerBar.Q<VisualElement>("Elemento3").Q<Label>("tipo").text = "AP";
         lowerBar.Q<VisualElement>("Elemento3").Q<Label>("data").text = generalData.ap;
         lowerBar.Q<VisualElement>("Elemento2").Q<Label>("tipo").text = generalData.level;
+
+
     }
 }

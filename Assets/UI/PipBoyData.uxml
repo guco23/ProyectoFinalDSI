@@ -3,9 +3,6 @@
     <ui:Template name="BarraSuperiorB" src="project://database/Assets/UI/BarrasSuperiores/BarraSuperiorB.uxml?fileID=9197481963319205126&amp;guid=7ccf6a065d6e4a547b50a8d3ca2c607e&amp;type=3#BarraSuperiorB" />
     <ui:Template name="ListadoSeleccionables" src="project://database/Assets/UI/ListadoSeleccionables/ListadoSeleccionables.uxml?fileID=9197481963319205126&amp;guid=a698a7a62c6bbca4fa5e32318bc1b545&amp;type=3#ListadoSeleccionables" />
     <ui:Template name="BarraInferior3Barrita" src="project://database/Assets/UI/BarraInfoInferior/BarraInferior3Barrita.uxml?fileID=9197481963319205126&amp;guid=b1c27fda69b6d8044b3317bf59faeaf2&amp;type=3#BarraInferior3Barrita" />
-    <ui:Template name="BarraInferior3Elementos" src="project://database/Assets/UI/BarraInfoInferior/BarraInferior3Elementos.uxml?fileID=9197481963319205126&amp;guid=7c14d7c97c2dfdc4384d3921f8af6f27&amp;type=3#BarraInferior3Elementos" />
-    <ui:Template name="ElementoBarraInferiorBarrita" src="project://database/Assets/UI/BarraInfoInferior/ElementoBarraInferiorBarrita.uxml?fileID=9197481963319205126&amp;guid=38003317fdfe7474a8dc9b0efd34057c&amp;type=3#ElementoBarraInferiorBarrita" />
-    <ui:Template name="ElementoBarraInferior" src="project://database/Assets/UI/BarraInfoInferior/ElementoBarraInferior.uxml?fileID=9197481963319205126&amp;guid=35f9c2ce880e5f845b5d432997021038&amp;type=3#ElementoBarraInferior" />
     <Style src="project://database/Assets/uss/pbstyle.uss?fileID=7433441132597879392&amp;guid=0e94157273ccf7247b31dfb777d9f037&amp;type=3#pbstyle" />
     <ui:VisualElement name="Pantalla" style="flex-grow: 1; background-color: rgb(0, 25, 4);">
         <ui:VisualElement name="topBar" style="height: 133px; justify-content: center; width: 1558px;">
@@ -14,18 +11,8 @@
         </ui:VisualElement>
         <ui:VisualElement name="Screen" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row;">
             <ui:Instance template="ListadoSeleccionables" name="ListadoSeleccionables" style="width: 45%; margin-top: 50px; margin-left: 50px;" />
-            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-                <ui:VisualElement name="Image" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); height: 291px;">
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); width: 50%; align-self: center; height: auto; margin-top: 30px; margin-bottom: 10px; background-image: resource(&apos;UI Images/Pip Boy&apos;);" />
-                </ui:VisualElement>
-                <ui:VisualElement name="Info" style="flex-grow: 1; background-color: rgba(0, 0, 0, 0);">
-                    <ui:Instance template="BarraInferior3Elementos" name="BarraInferior3Elementos" />
-                    <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); flex-direction: row; flex-wrap: wrap; width: 100%;">
-                        <ui:Instance template="ElementoBarraInferiorBarrita" name="ElementoBarraInferiorBarrita" />
-                        <ui:Instance template="ElementoBarraInferior" name="ElementoBarraInferior" />
-                        <ui:Instance template="ElementoBarraInferior" name="ElementoBarraInferior" />
-                    </ui:VisualElement>
-                </ui:VisualElement>
+            <ui:VisualElement style="flex-grow: 1; background-color: rgba(0, 0, 0, 0); align-self: center;">
+                <ui:Label tabindex="-1" text="Información de la misión 1:&#10;&#10;Se ha detectado una fuerza hostil que&#10; se mueve en las sombras del yermo,&#10; amenazando con desestabilizar la frágil&#10; paz que se ha mantenido durante demasiado&#10; tiempo." display-tooltip-when-elided="true" enable-rich-text="true" class="text" />
             </ui:VisualElement>
         </ui:VisualElement>
         <ui:VisualElement name="lowerBar" style="background-color: rgba(0, 0, 0, 0); height: 10%; flex-direction: column-reverse; padding-top: 24px;">
